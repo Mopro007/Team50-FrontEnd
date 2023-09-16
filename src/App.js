@@ -22,7 +22,7 @@ const App = () => {
   };
 
   const SignIn = (formData) => {
-    fetch('/signin', {
+    fetch('https://teamup50.pythonanywhere.com/signin', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
@@ -61,7 +61,7 @@ const App = () => {
   };
 
   const SignUp = (formData) => {
-    fetch('/signup', {
+    fetch('https://teamup50.pythonanywhere.com/signup', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
@@ -96,7 +96,7 @@ const App = () => {
 
   const Post_Project = (formData) => {
     const data = {'name':formData['name'],'description':formData['description'],'email':email};
-    fetch('/postproject', {
+    fetch('https://teamup50.pythonanywhere.com/postproject', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
@@ -123,7 +123,7 @@ const App = () => {
 
   const BrowseProjects = async () => {
     try {
-      const response = await fetch('/browseprojects', { method: 'GET' });
+      const response = await fetch('https://teamup50.pythonanywhere.com/browseprojects', { method: 'GET' });
       const data = await response.json();
       return data;
     } catch (error) {
@@ -133,7 +133,7 @@ const App = () => {
 
   const Participate = (project_id) => {
     const data = {'project_id':project_id,'email':email};
-    fetch('/participate', {
+    fetch('https://teamup50.pythonanywhere.com/participate', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
@@ -163,7 +163,7 @@ const App = () => {
   const UnParticipate = (project_id) => {
     const data = {'project_id':project_id,'email':email};
     console.log(data);
-    fetch('/unparticipate', {
+    fetch('https://teamup50.pythonanywhere.com/unparticipate', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
