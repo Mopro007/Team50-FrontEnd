@@ -10,7 +10,7 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
     <div className="main_container">
-        <h1 className='title'>Team50</h1>
+        <h1 className='title'>SHIT50</h1>
             <Provider store={store}>
                 <App/>
             </Provider>
