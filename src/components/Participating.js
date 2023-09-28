@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Participating = ({UnParticipate,Project_ID,Project_name,Project_description,Project_participants}) => {
-  console.log(Project_participants[0]);
+  if (typeof Project_participants != 'string') {
+    Project_participants = Project_participants[0];
+  }
   const handleUnParticipate = () => {
     UnParticipate(Project_ID);
   };
@@ -12,7 +14,7 @@ const Participating = ({UnParticipate,Project_ID,Project_name,Project_descriptio
       <p>{Project_description}</p>
       <p>Participants:</p>
       <ul>
-        {Project_participants[0].map((participant) => (
+        {Project_participants.map((participant) => (
           <li>{participant}</li>
         ))}
       </ul>

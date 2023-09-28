@@ -34,10 +34,11 @@ const App = () => {
         if (data.status != 'success') {
           alert(data.message);
         } else {
-          const  email  = data.user[2];
-          const  password  = data.user[3];
-          const  phase  = data.user[4];
-          const  project  = data.user[5];
+          const  email  = data.user[1];
+          const  password  = data.user[2];
+          const  phase  = data.user[3];
+          const  project  = data.user[4];
+          console.log(email, password, phase, project);
           if(project != null){
             const  project_id  = data.project[0];
             const  project_name  = data.project[1];

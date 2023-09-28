@@ -116,9 +116,9 @@ input[type="submit"]:hover {
 }
 .cards_list{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 .searchBar{
   background-color: rgba(128, 128, 128, 0.6);
