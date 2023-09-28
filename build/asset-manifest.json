@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Team50-FrontEnd/static/css/main.cf956538.css",
+    "main.js": "/Team50-FrontEnd/static/js/main.d8c4a889.js",
+    "static/js/787.b701888c.chunk.js": "/Team50-FrontEnd/static/js/787.b701888c.chunk.js",
+    "static/media/pexels-pixabay-207692.jpg": "/Team50-FrontEnd/static/media/pexels-pixabay-207692.8a08ed64826b2b8a2a3e.jpg",
+    "index.html": "/Team50-FrontEnd/index.html",
+    "main.cf956538.css.map": "/Team50-FrontEnd/static/css/main.cf956538.css.map",
+    "main.d8c4a889.js.map": "/Team50-FrontEnd/static/js/main.d8c4a889.js.map",
+    "787.b701888c.chunk.js.map": "/Team50-FrontEnd/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf956538.css",
+    "static/js/main.d8c4a889.js"
+  ]
+}
